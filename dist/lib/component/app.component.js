@@ -5,8 +5,8 @@ export var AppComponent = (function () {
     AppComponent.decorators = [
         { type: Component, args: [{
                     selector: 'angular-library-component',
-                    templateUrl: 'app.component.html',
-                    styleUrls: ['app.component.css']
+                    template: "\n  <p>\n      {{name}} Works\n  </p>\n  ",
+                    styles: ["\n  p {\n      color: red;\n  "]
                 },] },
     ];
     /** @nocollapse */

@@ -13,8 +13,7 @@ import * as import4 from '@angular/core/src/metadata/view';
 import * as import5 from '@angular/core/src/linker/view_type';
 import * as import6 from '@angular/core/src/change_detection/constants';
 import * as import7 from '@angular/core/src/linker/component_factory';
-import * as import8 from './app.component.css.shim.ngstyle';
-import * as import9 from '@angular/core/src/change_detection/change_detection_util';
+import * as import8 from '@angular/core/src/change_detection/change_detection_util';
 export class Wrapper_AppComponent {
   /*private*/ _eventHandler:Function;
   context:import0.AppComponent;
@@ -74,32 +73,38 @@ class View_AppComponent_Host0 extends import1.AppView<any> {
   }
 }
 export const AppComponentNgFactory:import7.ComponentFactory<import0.AppComponent> = new import7.ComponentFactory<import0.AppComponent>('angular-library-component',View_AppComponent_Host0,import0.AppComponent);
-const styles_AppComponent:any[] = [import8.styles];
+const styles_AppComponent:any[] = ['p[_ngcontent-%COMP%] {\n      color: red;'];
 var renderType_AppComponent:import2.RenderComponentType = import3.createRenderComponentType('',0,import4.ViewEncapsulation.Emulated,styles_AppComponent,{});
 export class View_AppComponent0 extends import1.AppView<import0.AppComponent> {
-  _el_0:any;
-  _text_1:any;
-  /*private*/ _expr_2:any;
+  _text_0:any;
+  _el_1:any;
+  _text_2:any;
+  _text_3:any;
+  /*private*/ _expr_4:any;
   constructor(viewUtils:import3.ViewUtils,parentView:import1.AppView<any>,parentIndex:number,parentElement:any) {
     super(View_AppComponent0,renderType_AppComponent,import5.ViewType.COMPONENT,viewUtils,parentView,parentIndex,parentElement,import6.ChangeDetectorStatus.CheckAlways);
-    this._expr_2 = import9.UNINITIALIZED;
+    this._expr_4 = import8.UNINITIALIZED;
   }
   createInternal(rootSelector:string):import7.ComponentRef<any> {
     const parentRenderNode:any = this.renderer.createViewRoot(this.parentElement);
-    this._el_0 = import3.createRenderElement(this.renderer,parentRenderNode,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
-    this._text_1 = this.renderer.createText(this._el_0,'',(null as any));
+    this._text_0 = this.renderer.createText(parentRenderNode,'\n  ',(null as any));
+    this._el_1 = import3.createRenderElement(this.renderer,parentRenderNode,'p',import3.EMPTY_INLINE_ARRAY,(null as any));
+    this._text_2 = this.renderer.createText(this._el_1,'',(null as any));
+    this._text_3 = this.renderer.createText(parentRenderNode,'\n  ',(null as any));
     this.init((null as any),((<any>this.renderer).directRenderer? (null as any): [
-      this._el_0,
-      this._text_1
+      this._text_0,
+      this._el_1,
+      this._text_2,
+      this._text_3
     ]
     ),(null as any));
     return (null as any);
   }
   detectChangesInternal(throwOnChange:boolean):void {
-    const currVal_2:any = import3.inlineInterpolate(1,'\n    ',this.context.name,' Works\n');
-    if (import3.checkBinding(throwOnChange,this._expr_2,currVal_2)) {
-      this.renderer.setText(this._text_1,currVal_2);
-      this._expr_2 = currVal_2;
+    const currVal_4:any = import3.inlineInterpolate(1,'\n      ',this.context.name,' Works\n  ');
+    if (import3.checkBinding(throwOnChange,this._expr_4,currVal_4)) {
+      this.renderer.setText(this._text_2,currVal_4);
+      this._expr_4 = currVal_4;
     }
   }
 }

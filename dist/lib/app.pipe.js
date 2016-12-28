@@ -7,11 +7,11 @@ export var AppPipe = (function () {
         for (var _i = 1; _i < arguments.length; _i++) {
             args[_i - 1] = arguments[_i];
         }
-        return input;
+        return input.substring(args[0] || 0, args[1] || 5) + "...";
     };
     AppPipe.decorators = [
         { type: Pipe, args: [{
-                    name: 'pipe'
+                    name: 'truncate'
                 },] },
     ];
     /** @nocollapse */

@@ -2,6 +2,9 @@ import { Injectable } from '@angular/core';
 export var AppService = (function () {
     function AppService() {
     }
+    AppService.prototype.getDate = function () {
+        return new Date();
+    };
     AppService.decorators = [
         { type: Injectable },
     ];
