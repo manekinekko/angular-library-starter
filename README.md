@@ -48,6 +48,59 @@ This is a minimalist starter if you need to (quickly) create and ship a library 
 }
 ```
 
+## Using you library in another project
+
+### yarn or npm it in your `package.json`
+
+````
+"dependencies": {
+  "@angular/common": "^2.3.1",
+  "@angular/compiler": "^2.3.1",
+  "@angular/core": "^2.3.1",
+  //...
+  "@manekinekko/angular-library-starter": "^1.0.0",
+},
+//...
+
+```
+
+### import the `AppModule` from the library
+```
+import { NgModule } from '@angular/core';
+import { AppModule } from '@manekinekko/angular-library-starter';
+
+@NgModule({
+  imports: [
+    AppModule.forRoot()
+  ],
+  //...
+})
+export class AppModule { }
+```
+
+
+### use it anywhere in your NgModules
+```
+import { Component } from '@angular/core';
+import { AppService } from '@manekinekko/angular-library-starter';
+
+// AppService and AppPipe are imported by the AppModule
+
+@Component({
+  selector: 'app-root',
+  templateUrl: `
+   {{ text | truncate }}
+   <angular-library-component></angular-library-component>
+  `
+})
+export class AppComponent {
+  text = 'Lorem ipsum dolor sit amet';
+  constructor(as: AppService) {
+    this.date = as.getDate().toString();
+  }
+}
+```
+
 ## Disclaimers
 1. This starter contains the minimum configuration for your library so it can be shared and used across other projects.
 2. Tests are not included in this starter!
