@@ -16,7 +16,7 @@
     },
     "homepage": "https://github.com/manekinekko/angular-library-starter",
     "bugs": "https://github.com/manekinekko/angular-library-starter/issues",
-    "description": "A Web Bluetooth (Bluetooth Low Energy) module for angular (v2+)",
+    "description": "A Minimalist Starter for Angular (v2+) libraries",
     "main": "dist/index.js",
     "scripts": {
         "clean": "rimraf dist/",
