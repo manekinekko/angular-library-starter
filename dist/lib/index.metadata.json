@@ -1,1 +1,0 @@
-[{"__symbolic":"module","version":3,"metadata":{},"exports":[{"from":"./app.module"},{"from":"./app.service"},{"from":"./app.pipe"}]},{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./app.module"},{"from":"./app.service"},{"from":"./app.pipe"}]}]
