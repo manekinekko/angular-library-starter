@@ -88,7 +88,7 @@ import { AppService } from '@manekinekko/angular-library-starter';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `
+  template: `
    {{ text | truncate }}
    <angular-library-component></angular-library-component>
   `
