@@ -1,0 +1,7 @@
+--require polyfills.js
+--reporter spec 
+--ui bdd 
+--colors 
+--harmony 
+--timeout 10000 
+dist/commonjs/**/*.spec.js
