@@ -1,3 +1,6 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/hhk7cc6vtlf2j6dl/branch/master?svg=true)](https://ci.appveyor.com/project/manekinekko/angular-library-starter/branch/master)
+[![CircleCI](https://circleci.com/gh/manekinekko/angular-library-starter.svg?style=svg)](https://circleci.com/gh/manekinekko/angular-library-starter)
+
 ## 🎩 Minimalist Angular Library Starter
 
 This is a minimalist starter if you need to (quickly) create and ship a library for your Angular (v2+) applications.
