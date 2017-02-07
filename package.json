@@ -22,7 +22,8 @@
         "clean": "rimraf dist/",
         "build:aot": "ngc -p tsconfig.json",
         "build:jit": "tsc -p tsconfig.json",
-        "build": "npm run clean && npm run build:aot"
+        "build": "npm run clean && npm run build:aot",
+        "start": "npm run build"
     },
     "types": "dist/index.d.ts",
     "private": false,
