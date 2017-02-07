@@ -1,54 +1,54 @@
 {
-    "name": "@manekinekko/angular-library-starter",
-    "version": "1.0.1",
-    "license": "MIT",
-    "author": {
-        "name": "Wassim Chegham",
-        "email": "github@wassimchegham.com"
-    },
-    "engines": {
-        "node": ">= 5.4.1"
-    },
-    "contributors": [],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:manekinekko/angular-library-starter.git"
-    },
-    "homepage": "https://github.com/manekinekko/angular-library-starter",
-    "bugs": "https://github.com/manekinekko/angular-library-starter/issues",
-    "description": "A Minimalist Starter for Angular (>=2) libraries with JIT and AOT support",
-    "main": "dist/index.js",
-    "scripts": {
-        "clean": "rimraf dist/",
-        "build:aot": "ngc -p tsconfig.json",
-        "build:jit": "tsc -p tsconfig.json",
-        "build": "npm run clean && npm run build:aot",
-        "start": "npm run build"
-    },
-    "types": "dist/index.d.ts",
-    "private": false,
-    "keywords": [
-        "angular",
-        "library",
-        "starter",
-        "aot",
-        "jit"
-    ],
-    "dependencies": {
-        "@angular/common": "^2.4.1",
-        "@angular/compiler": "^2.4.1",
-        "@angular/core": "^2.4.1",
-        "@angular/platform-browser": "^2.4.1",
-        "core-js": "2.4.1",
-        "rimraf": "^2.5.4",
-        "rxjs": "5.0.2",
-        "typescript": "2.0.10",
-        "zone.js": "0.7.4"
-    },
-    "devDependencies": {
-        "@angular/compiler-cli": "^2.4.1",
-        "@angular/platform-server": "^2.4.1",
-        "@types/jasmine": "2.2.30",
-        "@types/node": "6.0.54"
-    }
+  "name": "@manekinekko/angular-library-starter",
+  "version": "1.0.2",
+  "license": "MIT",
+  "author": {
+    "name": "Wassim Chegham",
+    "email": "github@wassimchegham.com"
+  },
+  "engines": {
+    "node": ">= 5.4.1"
+  },
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:manekinekko/angular-library-starter.git"
+  },
+  "homepage": "https://github.com/manekinekko/angular-library-starter",
+  "bugs": "https://github.com/manekinekko/angular-library-starter/issues",
+  "description": "A Minimalist Starter for Angular (>=2) libraries with JIT and AOT support",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "build:aot": "ngc -p tsconfig.json",
+    "build:jit": "tsc -p tsconfig.json",
+    "build": "npm run clean && npm run build:aot",
+    "start": "npm run build"
+  },
+  "types": "dist/index.d.ts",
+  "private": false,
+  "keywords": [
+    "angular",
+    "library",
+    "starter",
+    "aot",
+    "jit"
+  ],
+  "dependencies": {
+    "@angular/common": "^2.4.1",
+    "@angular/compiler": "^2.4.1",
+    "@angular/core": "^2.4.1",
+    "@angular/platform-browser": "^2.4.1",
+    "core-js": "2.4.1",
+    "rimraf": "^2.5.4",
+    "rxjs": "5.0.2",
+    "typescript": "2.0.10",
+    "zone.js": "0.7.4"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^2.4.1",
+    "@angular/platform-server": "^2.4.1",
+    "@types/jasmine": "2.2.30",
+    "@types/node": "6.0.54"
+  }
 }

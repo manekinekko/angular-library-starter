@@ -1,7 +1,5 @@
 // adapted from: https://github.com/AngularClass/angular2-webpack-starter/blob/master/src/custom-typings.d.ts
 
-console.log('cdfds');
-
 /*
  * Custom Type Definitions
  * When including 3rd party modules you also need to include the type definition for the module
