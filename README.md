@@ -55,7 +55,7 @@ This is a minimalist starter if you need to (quickly) create and ship a library 
 
 ### yarn or npm it in your `package.json`
 
-````
+```json
 "dependencies": {
   "@angular/common": "^2.3.1",
   "@angular/compiler": "^2.3.1",
@@ -64,11 +64,11 @@ This is a minimalist starter if you need to (quickly) create and ship a library 
   "@manekinekko/angular-library-starter": "^1.0.0",
 },
 //...
-
 ```
 
 ### import the `AppModule` from the library
-```
+
+```typescript
 import { NgModule } from '@angular/core';
 import { AppModule } from '@manekinekko/angular-library-starter';
 
@@ -81,9 +81,9 @@ import { AppModule } from '@manekinekko/angular-library-starter';
 export class AppModule { }
 ```
 
-
 ### use it anywhere in your NgModules
-```
+
+```typescript
 import { Component } from '@angular/core';
 import { AppService } from '@manekinekko/angular-library-starter';
 
@@ -104,9 +104,15 @@ export class AppComponent {
 }
 ```
 
+### Custom types
+
+If you have custom typings you want to include in your project, use the [custom-typings.d.ts](https://github.com/manekinekko/angular-library-starter/blob/master/src/custom-typings.d.ts) for that purpose.
+
+
 ## Disclaimers
 1. This starter contains the minimum configuration for your library so it can be shared and used across other projects.
 2. Tests are not included in this starter!
+3. This starter is not compatible with the angular-cli **YET**.
 
 
 ## Have a PR?
