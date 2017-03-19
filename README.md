@@ -44,7 +44,7 @@ This is a minimalist starter if you need to (quickly) create and ship a library 
     
     // this is for the AOT compiler
     "angularCompilerOptions": {
-        "genDir": "dist",
+        "genDir": "tmp",
         "entryModule": "src/lib/app.module#AppModule"
     },
     //...
