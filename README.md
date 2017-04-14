@@ -3,6 +3,14 @@
 
 ### Due to the limited time on our planet Earth (24 hours a day is too short!), I'm sadly not supporting this project anymore. Please use [Jurgen's Yeoman generator](https://github.com/jvandemo/generator-angular2-library).
 
+![](https://cloud.githubusercontent.com/assets/1859381/24447242/901c8a1a-1470-11e7-8b55-2484b7825722.jpg)
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
 ## 🎩 Minimalist Angular Library Starter
 
 This is a minimalist starter if you need to (quickly) create and ship a library for your Angular (v2+) applications.
